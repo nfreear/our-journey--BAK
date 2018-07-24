@@ -1,0 +1,41 @@
+
+<!-- <div class='optionsbar' id='options'> -->
+  <h2>Options:</h2>
+  <h3>File:</h3>
+  <form id='saveform' aria-label='Save journey to file'>
+    <label for='filenamearea'>Save:</label>
+    <input type='text' value='journey_file' id='filenamearea'>
+    <input type='submit' value='Save' id='saveButton' >
+  </form>
+  <form id='loadform' aria-label='Load journey from file'>
+    <label for='fileinput'>Load:</label>
+    <input type='file' id='fileinput' required aria-required='true'>
+    <input type='submit' id='loadButton' value='Load' >
+  </form>
+
+  <h3>View:</h3>
+  <form id='backgroundform' aria-label='Choose background colour'>
+    <label for='background_select'>Background:</label>
+    <select id='background_select'>
+      <optionvalue='none'>None</option>
+      <optionvalue='Beige'>Beige</option>
+      <optionvalue='BurlyWood'>Wood</option>
+      <optionvalue='DarkSeaGreen'>Green</option>
+      <optionvalue='PaleTurquoise'>Turquoise</option>
+      <optionvalue='SkyBlue'>Blue</option>
+      <optionvalue='LightPink'>Pink</option>
+      <optionvalue='Lavender'>Lavender</option>
+      <optionvalue='LightGray'>Grey</option>
+      <optionvalue='Coral'>Orange</option>
+    </select>
+    <input type='submit' value='Update' id='updateButton'>
+  </form>
+
+  <form id='hideeditorform'>
+    <input type='submit' aria-label='Hide editor' value='Hide editor' id='hideButton'>
+  </form>
+
+  <p><a href='?demo=1'>Demo fill</a> | <a href='?demo=0'>Reset &ndash; no fill</a>
+
+  | <a id='oj-share-link' class='oj-share-link' href='?empty' rel='nofollow' title='Base64 encoded!'>Share</a>
+ <!-- </div> -->

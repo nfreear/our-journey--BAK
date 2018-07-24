@@ -1,0 +1,69 @@
+
+<h1 id='title'>Journey editor</h1>
+<p></p>
+<form id='updateform'>
+  <label for='event_desc'>What happened?</label>
+  <textarea rows=3 maxlength=38 cols=12 id='event_desc'></textarea>
+
+  <label for='icon_select'>Event:</label>
+  <select id='icon_select'>
+    <option value='none'>None</option>
+    <option value='achievement'>Achievement</option>
+    <option value='admin'>Admininstration</option>
+    <option value='assessment'>Assessment</option>
+    <option value='studybreak'>Break from study</option>
+    <option value='communication'>Communication</option>
+    <option value='confidence'>Confidence Boosted</option>
+    <option value='duedates'>Due dates</option>
+    <option value='information'>Getting information</option>
+    <option value='studygoal'>Goal</option>
+    <option value='helpneeded'>Help needed</option>
+    <option value='highpressure'>High pressure</option>
+    <option value='lostdirection'>Lost direction</option>
+    <option value='lowenergy'>Low energy</option>
+    <option value='lowscores'>Low scores</option>
+    <option value='studymilestone'>Milestone</option>
+    <option value='nosupport'>No support</option>
+    <option value='peersupport'>Peer support</option>
+    <option value='problem'>Problem</option>
+    <option value='register'>Registering</option>
+    <option value='studyexperience'>Study experience</option>
+    <option value='studysuccess'>Study success</option>
+    <option value='studysupport'>Study support</option>
+    <option value='timelost'>Time Lost</option>
+  </select>
+
+  <label for='emoticon_select'>Emotion:</label>
+  <select id='emoticon_select'>
+    <option value='none'>None</option>
+    <option value='angry'>Angry</option>
+    <option value='bored'>Bored</option>
+    <option value='confused'>Confused</option>
+    <option value='excited'>Excited</option>
+    <option value='happy'>Happy</option>
+    <option value='nervous'>Nervous</option>
+    <option value='achieve'>Proud</option>
+    <option value='thinking'>Thinking</option>
+    <option value='unhappy'>Unhappy</option>
+    <option value='sick'>Unwell</option>
+    <option value='upset'>Upset</option>
+  </select>
+
+  <label for='post_it_text'>Note:</label>
+  <textarea rows=3 maxlength=44 cols=12 id='post_it_text' value=''></textarea>
+
+  <input type='submit' aria-label='Update element' value='Update' id='updateButton' disabled>
+</form><!-- id='updateform' -->
+
+<form id='deleteform'>
+    <input type='submit' aria-label='Delete element' value='Clear' id='deleteButton' disabled>
+</form>
+<form id='backform'>
+    <input type='submit' aria-label='Move element backwards' value='Move Back' id='backButton' disabled>
+</form>
+<form id='forwardform'>
+    <input type='submit' aria-label='Move element forwards' value='Move Forward' id='fwdButton' disabled>
+</form>
+<form id='optionsform'>
+    <input type='submit' aria-label='Show or hide other options' value='Show/Hide Options' id='optionsButton'>
+</form>

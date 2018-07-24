@@ -16,109 +16,11 @@
     </head>
     <body>
         <div class="editorbar" id="editor">
-        <h1 id="title">Journey editor</h1>
-        <p></p>
-            <form id="updateform">
 
-                    <label for="event_desc">What happened?</label>
-                    <textarea rows=3 maxlength=38 cols=12 id="event_desc" value=""></textarea>
-                    <label for="icon_select">Event:</label>
-                    <select id="icon_select">
-                        <option value="none">None</option>
-                        <option value="achievement">Achievement</option>
-                        <option value="admin">Admininstration</option>
-                        <option value="assessment">Assessment</option>
-                        <option value="studybreak">Break from study</option>
-                        <option value="communication">Communication</option>
-                        <option value="confidence">Confidence Boosted</option>
-                        <option value="duedates">Due dates</option>
-                        <option value="information">Getting information</option>
-                        <option value="studygoal">Goal</option>
-                        <option value="helpneeded">Help needed</option>
-                        <option value="highpressure">High pressure</option>
-                        <option value="lostdirection">Lost direction</option>
-                        <option value="lowenergy">Low energy</option>
-                        <option value="lowscores">Low scores</option>
-                        <option value="studymilestone">Milestone</option>
-                        <option value="nosupport">No support</option>
-                        <option value="peersupport">Peer support</option>
-                        <option value="problem">Problem</option>
-                        <option value="register">Registering</option>
-                        <option value="studyexperience">Study experience</option>
-                        <option value="studysuccess">Study success</option>
-                        <option value="studysupport">Study support</option>
-                        <option value="timelost">Time Lost</option>
-                    </select>
-                    <label for="emoticon_select">Emotion:</label>
-                    <select id="emoticon_select">
-                        <option value="none">None</option>
-                        <option value="angry">Angry</option>
-                        <option value="bored">Bored</option>
-                        <option value="confused">Confused</option>
-                        <option value="excited">Excited</option>
-                        <option value="happy">Happy</option>
-                        <option value="nervous">Nervous</option>
-                        <option value="achieve">Proud</option>
-                        <option value="thinking">Thinking</option>
-                        <option value="unhappy">Unhappy</option>
-                        <option value="sick">Unwell</option>
-                        <option value="upset">Upset</option>
-                    </select>
-                    <label for="post_it_text">Note:</label>
-                    <textarea rows=3 maxlength=44 cols=12 id="post_it_text" value=""></textarea>
-                    <input type="submit" aria-label="Update element" value="Update" id="updateButton" disabled>
-                </form>
-                <form id="deleteform">
-                    <input type="submit" aria-label="Delete element" value="Clear" id="deleteButton" disabled>
-                </form>
-                <form id="backform">
-                    <input type="submit" aria-label="Move element backwards" value="Move Back" id="backButton" disabled>
-                </form>
-                <form id="forwardform">
-                    <input type="submit" aria-label="Move element forwards" value="Move Forward" id="fwdButton" disabled>
-                </form>
-                <form id="optionsform">
-                    <input type="submit" aria-label="Show or hide other options" value="Show/Hide Options" id="optionsButton">
-                </form>
-                <div class = "optionsbar" id = "options">
-                   <h2>Options:</h2>
-                        <h3>File:</h3>
-                        <form id="saveform" aria-label="Save journey to file">
-                            <label for="filenamearea">Save:</label>
-                            <input type='text' value="journey_file" id="filenamearea">
-                            <input type="submit" value="Save" id="saveButton" >
-                        </form>
-                        <form id="loadform" aria-label="Load journey from file">
-                            <label for="fileinput">Load:</label>
-                            <input type='file' id='fileinput' required aria-required="true">
-                            <input type="submit" id="loadButton" value="Load" >
-                        </form>
-                        <h3>View:</h3>
-                        <form id="backgroundform" aria-label="Choose background colour">
-                                <label for="background_select">Background:</label>
-                                <select id="background_select">
-                                    <option value="none">None</option>
-                                    <option value="Beige">Beige</option>
-                                    <option value="BurlyWood">Wood</option>
-                                    <option value="DarkSeaGreen">Green</option>
-                                    <option value="PaleTurquoise">Turquoise</option>
-                                    <option value="SkyBlue">Blue</option>
-                                    <option value="LightPink">Pink</option>
-                                    <option value="Lavender">Lavender</option>
-                                    <option value="LightGray">Grey</option>
-                                    <option value="Coral">Orange</option>
-                                </select>
-                                <input type="submit" value="Update" id="updateButton">
-                        </form>
-                        <form id="hideeditorform">
-                            <input type="submit" aria-label="Hide editor" value="Hide editor" id="hideButton">
-                        </form>
+          <div class="editorbar-inner"> </div>
 
-                        <p><a href="?demo=1">Demo fill</a> | <a href="?demo=0">Reset &ndash; no fill</a>
+          <div class="optionsbar" id="options"> </div>
 
-                          | <a id="oj-share-link" class="oj-share-link" href="?empty" rel="nofollow" title="Base64 encoded!">Share</a>
-                    </div>
-                </div>
         </div>
 
 
@@ -143,30 +45,6 @@
             <g class="card-holder"> </g>
         </svg>
     </div>
-
-
-    <script id="oj-svg-card-template" type="text/template">
-
-    <svg x="{x}" y="{y}" role="button" id="group{j}" aria-labelledby="group-0" class="card orient-{orient}">
-        <rect role="button" aria-labelledby="desc-card-0" fill="" id="place{j}"/>
-        <image href="" id="icon{j}" aria-labelledby="desc-icon-rocket"/>
-        <switch>
-            <foreignObject id="description{j}" class="in_card" width="100" height="200">
-                <p xmlns="http://www.w3.org/1999/xhtml">not filled</p>
-            </foreignObject>
-            <text id="description{j}" class="in_card">not filled</text>
-        </switch>
-        <image href="" id="emoticon{j}" aria-labelledby="desc-icon-rocket"/>
-        <image id="postit{j}" href="assets/PostIt.png" width="100" height="100" visibility="collapse"></image>
-        <switch>
-            <foreignObject id="postittext{j}" class="in_postit" width="100" height="100" visibility="collapse">
-                <p xmlns="http://www.w3.org/1999/xhtml">not filled</p>
-            </foreignObject>
-            <text id="postittext{j}" class="in_card">not filled</text>
-        </switch>
-    </svg>
-
-    </script>
 
 
     <p class="footer-copy">Our Journeys | © 2018 <a href="http://www.open.ac.uk/">The Open University</a>
