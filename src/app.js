@@ -11,12 +11,9 @@ const LAYOUT = require('./layout');
 const EVENTS = require('./event');
 const SHARE = require('./share-link');
 const UI = require('./user-interface');
-// const TPL_TEST = require('./hello.tpl.htm');
 
 function run () {
   console.warn('The our-journey API:', require('../index'));
-
-  // console.warn('Template test:', TPL_TEST.replace('{world}', ' ... to The WORLD !! '));
 
   LAYOUT.setupEditor();
   LAYOUT.reflow();

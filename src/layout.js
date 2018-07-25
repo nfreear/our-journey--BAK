@@ -9,7 +9,6 @@ module.exports = {
 
 const LAYOUTS = require('./layouts.json');
 const SVG_TEMPLATE = require('./views/card-template.svg'); // WAS: document.querySelector('#oj-svg-card-template').innerText;
-// const UPDATE_FORM = require('./views/updateform.html');
 const EDITOR_BAR = require('./views/editorbar.html');
 const OPTIONS_BAR = require('./views/optionsbar.html');
 const CARD_HOLDER = document.querySelector('#journey-canvas .card-holder');
@@ -29,8 +28,6 @@ function reflow (layout) {
 }
 
 function setupEditor () {
-  // document.querySelector('#updateform').innerHTML = UPDATE_FORM;
-
   document.querySelector('.editorbar .editorbar-inner').innerHTML = EDITOR_BAR;
   document.querySelector('.editorbar .optionsbar').innerHTML = OPTIONS_BAR;
 }

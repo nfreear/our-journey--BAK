@@ -48,6 +48,11 @@ h3 {
     font-size: .92rem;
 }
 
+svg#journey-canvas {
+  height: 2600px;
+  width: 100%;
+}
+
 svg#journey-canvas .in_postit {
     font-family: 'Comic Sans MS', sans-serif;
     font-size: .92rem;
@@ -119,6 +124,24 @@ svg#journey-canvas .card.orient-horiz > rect {
 svg#journey-canvas .card.orient-vert > rect {
   height: 240px;
   width: 130px;
+}
+
+/* svg#journey-canvas .the-start-card {
+  x: 120px;  y: 0;
+} */
+
+svg#journey-canvas .the-start-card > rect {
+  fill: crimson;
+  fill-opacity: 1.0;
+  height: 90px;
+  width: 130px;
+  stroke: black;
+}
+
+svg#journey-canvas .card image.postit-bg,
+svg#journey-canvas .the-start-card > image {
+  height: 100px;
+  width: 100px;
 }
 
 .footer-copy {

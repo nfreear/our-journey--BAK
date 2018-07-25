@@ -12,6 +12,8 @@ module.exports = {
 
   events: require('./src/event'),
 
+  assets: require('./src/assets'),
+
   file: require('./src/file'),
 
   share: require('./src/share-link'),
