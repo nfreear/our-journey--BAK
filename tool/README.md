@@ -1,7 +1,9 @@
 
+[![Build status — Travis-CI][travis-icon]][travis]
 [![js-semistandard-style][semi-icon]][semi]
 [![Browserify][br-icon]][browserify]
 [![Husky Git hooks][hook-icon]][hook]
+[![our-journey - on Npmjs][npm-icon]][npm]
 
 # Our Journeys interactive student journey creator
 
@@ -74,7 +76,7 @@ Copyright © 2018 [The Open University][ou]. All rights reserved. ([Institute of
 [iet]: https://iet.open.ac.uk/
 [ou]: http://www.open.ac.uk/
 [web]: https://iet-ou.github.io/our-journey/?demo=1
-[gh]: https://github.com/IET-OU/learningdesign
+[gh]: https://github.com/IET-OU/our-journey
 [tim]: https://iet.open.ac.uk/profiles/tim.coughlan
 [kate]: http://www.open.ac.uk/people/kml322
 [node]: https://nodejs.org/en/
@@ -95,5 +97,9 @@ Copyright © 2018 [The Open University][ou]. All rights reserved. ([Institute of
 [hook]: https://npmjs.com/package/husky "Git hooks made easy 🐶"
 [hook-icon]: https://img.shields.io/badge/git--hook-husky-ff69b4.svg
 [q-location]: https://github.com/IET-OU/our-journey/search?q=location&type=Code "GitHub search: 'location'"
+[npm]: https://npmjs.com/package/our-journey
+[npm-icon]: https://badge.fury.io/js/our-journey.svg
+[travis]: https://travis-ci.org/IET-OU/our-journey "Build status – Travis-CI (NPM)"
+[travis-icon]: https://api.travis-ci.org/IET-OU/our-journey.svg
 
 [End]: //.
