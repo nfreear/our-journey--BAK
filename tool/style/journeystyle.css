@@ -70,7 +70,7 @@ svg#journey-canvas .in_postit {
     {
       position: fixed;
       top: 0;
-      background: ivory;
+    background: ivory;
       display: inline;
       width: 100%;
     }
@@ -80,7 +80,7 @@ svg#journey-canvas .in_postit {
       border: 1px solid #aaa;
       border-radius: 5px;
       position: fixed;
-      background: ivory;
+    background: ivory;
       padding: 5px;
       display: block;
       font-size: 1rem;
@@ -94,7 +94,7 @@ svg#journey-canvas .in_postit {
 
  .floating_post
  {
-    background-color: lightyellow;
+  background-color: lightyellow;
  }
 
 .floating_icon_select
@@ -179,4 +179,30 @@ img[ src $= 'assets/iet-logo.svg' ] {
   height: 68px;
   margin-right: 16px;
   padding: 5px;
+}
+
+.our-journey-js .fork-me-btn {
+  clear: both;
+}
+
+.our-journey-js .fork-me-btn a {
+  background-color: #eff3f6;
+  background-image: -webkit-linear-gradient(top, #fafbfc, #e4ebf0);
+  background-image: -moz-linear-gradient(top, #fafbfc, #e4ebf0);
+  background-image: linear-gradient(to bottom, #fafbfc, #e4ebf0);
+  background-repeat: repeat-x;
+  background-size: 110% 110%;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFAFBFC', endColorstr='#FFE4EBF0')";
+
+  display: inline-block;
+  font-weight: 600;
+  vertical-align: bottom;
+  cursor: pointer;
+  border: 1px solid #d1d2d3;
+  border-radius: 0.25em;
+
+  color: #24292e;
+  text-decoration: none;
+  outline: 0;
+  padding: .6rem;
 }
